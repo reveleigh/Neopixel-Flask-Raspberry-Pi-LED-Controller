@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RGB Light Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>RGB Light Control</h1>
+    <div id="button-container">
+      <button id="red-button"></button>
+      <button id="orange-button"></button>
+      <button id="yellow-button"></button>
+      <button id="green-yellow-button"></button>
+      <button id="green-button"></button>
+      <button id="green-cyan-button"></button>
+      <button id="cyan-button"></button>
+      <button id="blue-cyan-button"></button>
+      <button id="blue-button"></button>
+      <button id="blue-magenta-button"></button>
+      <button id="magenta-button"></button>
+      <button id="red-magenta-button"></button>
+      <button id="white-button"></button>
+      <button id="warm-white-button"></button>
+      <button id="cool-white-button"></button>
+      <button id="off-button"></button>
+    </div>
+    <button id="rainbow-button"></button>
+    <div id="slider-container">
+      <label for="red">Red:</label>
+      <input type="range" id="red" name="red" min="0" max="255" value="0" />
+      <input
+        type="text"
+        id="red-value"
+        name="red-value"
+        value="0"
+        size="3"
+      /><br />
+
+      <label for="green">Green:</label>
+      <input type="range" id="green" name="green" min="0" max="255" value="0" />
+      <input
+        type="text"
+        id="green-value"
+        name="green-value"
+        value="0"
+        size="3"
+      /><br />
+
+      <label for="blue">Blue:</label>
+      <input type="range" id="blue" name="blue" min="0" max="255" value="0" />
+      <input
+        type="text"
+        id="blue-value"
+        name="blue-value"
+        value="0"
+        size="3"
+      /><br />
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
